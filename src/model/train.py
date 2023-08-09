@@ -27,6 +27,7 @@ def main(args):
     # train model
     train_model(args.reg_rate, X_train, X_test, y_train, y_test)
 
+
 def split_data(df):
     X, y = df[['Pregnancies','PlasmaGlucose','DiastolicBloodPressure','TricepsThickness','SerumInsulin','BMI','DiabetesPedigree','Age']].values, df['Diabetic'].values
     
